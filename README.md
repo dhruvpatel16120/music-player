@@ -4,9 +4,18 @@
 > 🖥 Runs natively on Windows (installer included)  
 > ✨ Features: beautiful dark purple theme, animated album cover, local & online songs, playlist, volume control, splash screen & tray icon
 
+
+# 🛠 **Tech Stack**
+<p>
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" height="40" alt="React" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/electron/electron-original.svg" height="40" alt="Electron" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="40" alt="JavaScript" />
+  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="40" alt="Node.js" />
+</p>
+
 ---
 
-## ✨ Features
+# ✨ Features
 ✅ Dark purple professional UI  
 ✅ Local song upload + online URL add  
 ✅ Animated rotating album cover  
@@ -21,7 +30,8 @@
 
 ---
 
-## 📂 Project Structure
+# 📂 Project Structure
+
 ```plaintext
 music-player/
 ├ build/                → Icons & assets
@@ -45,7 +55,7 @@ music-player/
 ```
 ---
 
-### ⚙ Installation & Development
+# ⚙ Installation & Development
 ## 1️⃣ Clone the repository
 ```
 git clone https://github.com/dhruvpatel16120/music-player.git
@@ -61,39 +71,43 @@ npm install
 ```
 npm run dev
 ```
++ Opens Vite dev server & Electron window
+  
+# 🏗 Production Build & Windows Installer
 
-Opens Vite dev server & Electron window
-
-### 🏗 Production Build & Windows Installer
 ## Build frontend
 ```
 npm run build
 ```
+
 ## Build installer
 ```
 npm run dist
 ```
 ---
-### ✅ Usage
->Click “+” to add local songs **
->Paste URL to add online songs
->Use player controls & volume/mute buttons
->Tray icon shows Show/Quit menu
->Splash screen displays at startup
 
-### 📦 Built With
+# ✅ Usage
++ Click “+” to add local songs 
++ Paste URL to add online songs
++ Use player controls & volume/mute buttons
++ Tray icon shows Show/Quit menu
++ Splash screen displays at startup
 
-React + Vite → frontend
-Tailwind CSS → styling & dark purple theme
-Electron → native desktop app
-Electron Builder → Windows installer
 ---
 
-### ✏ Author
-Developed by Dhruv Patel
-🧑‍💻 Software engineer, digital marketer & content creator
+## 📦 Built With
+
++ React + Vite → frontend
++ Tailwind CSS → styling & dark purple theme
++ Electron → native desktop app
++ Electron Builder → Windows installer
+
 ---
 
-### 📄 License
-This project is for personal & educational purposes.
-Feel free to fork, learn, and build your own version! 🎵
+## ✏ Author
+Developed by Dhruv Patel : 🧑‍💻 Software engineer, digital marketer & content creator
+---
+
+## 📄 License
+
+This project is for personal & educational purposes. Feel free to fork, learn, and build your own version! 🎵
