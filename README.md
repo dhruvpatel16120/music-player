@@ -43,6 +43,8 @@ music-player/
 ├ package.json
 └ README.md
 ```
+---
+
 ### ⚙ Installation & Development
 ## 1️⃣ Clone the repository
 ```
@@ -62,39 +64,36 @@ npm run dev
 
 Opens Vite dev server & Electron window
 
-🏗 Production Build & Windows Installer
-Build frontend
-bash
-Copy
-Edit
+### 🏗 Production Build & Windows Installer
+## Build frontend
+```
 npm run build
-Build installer
+```
+## Build installer
+```
 npm run dist
+```
+---
+### ✅ Usage
+>Click “+” to add local songs **
+>Paste URL to add online songs
+>Use player controls & volume/mute buttons
+>Tray icon shows Show/Quit menu
+>Splash screen displays at startup
 
-✅ Usage
-Click “+” to add local songs
+### 📦 Built With
 
-Paste URL to add online songs
-
-Use player controls & volume/mute buttons
-
-Tray icon shows Show/Quit menu
-
-Splash screen displays at startup
-
-📦 Built With
 React + Vite → frontend
-
 Tailwind CSS → styling & dark purple theme
-
 Electron → native desktop app
-
 Electron Builder → Windows installer
+---
 
-✏ Author
+### ✏ Author
 Developed by Dhruv Patel
 🧑‍💻 Software engineer, digital marketer & content creator
+---
 
-📄 License
+### 📄 License
 This project is for personal & educational purposes.
 Feel free to fork, learn, and build your own version! 🎵
