@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin-slow {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 6s linear infinite;
+}
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.fade-in {
+  animation: fade-in 0.5s ease-in-out;
+}
+@keyframes fade-out {
+  from { opacity: 1; }
+  to { opacity: 0; }
+}
+
+.fade-out {
+  animation: fade-out 0.5s ease-in-out;
+}
+.equalizer {
+  display: flex;
+  align-items: flex-end;
+  height: 80px;          /* taller box */
+  gap: 6px;              /* more gap between bars */
+}
+
+.equalizer div {
+  width: 8px;            /* thicker bars */
+  background: linear-gradient(180deg, red, orange, yellow, green, blue, purple);
+  border-radius: 2px;
+  animation: bounce 1s infinite ease-in-out alternate;
+}
+
+.equalizer div:nth-child(2) { animation-delay: 0.1s; }
+.equalizer div:nth-child(3) { animation-delay: 0.2s; }
+.equalizer div:nth-child(4) { animation-delay: 0.3s; }
+.equalizer div:nth-child(5) { animation-delay: 0.4s; }
+.equalizer div:nth-child(6) { animation-delay: 0.5s; }
+
+@keyframes bounce {
+  0%   { height: 20%; }
+  100% { height: 100%; }
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+  100% { transform: scale(1); }
+}
