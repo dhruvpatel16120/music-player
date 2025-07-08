@@ -59,6 +59,7 @@ npm install
 ```
 npm run dev
 ```
+
 Opens Vite dev server & Electron window
 
 🏗 Production Build & Windows Installer
