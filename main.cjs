@@ -30,7 +30,8 @@ function createWindow() {
     }
   });
 
-  const isDev = !app.isPackaged;
+  const isDev = process.env.NODE_ENV === "development";
+
 
   if (isDev) {
     mainWindow.loadURL('http://localhost:5173');
@@ -72,6 +73,9 @@ app.whenReady().then(createWindow);
 app.on('activate', () => {
   if (BrowserWindow.getAllWindows().length === 0) createWindow();
 });
+
+app.disableHardwareAcceleration();
+// Handle unhandled errors
 
 // Quit when all windows closed (except macOS)
 app.on('window-all-closed', () => {

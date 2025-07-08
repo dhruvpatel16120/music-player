@@ -7,7 +7,7 @@ import RightCard from "./RightCard";
 
 export default function MusicPlayer() {
   const [playlist, setPlaylist] = useState([
-    { title: "Default Music", artist: "Audio", src: "/audio/song1.mp3" },
+    { title: "Default Music", artist: "Audio", src: "audio/song1.mp3" },
   ]);
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -124,7 +124,7 @@ export default function MusicPlayer() {
           {/* Cover + song info */}
           <div className="flex flex-col items-center space-y-2">
             <img
-              src="/audio/default_cover.jpg"
+              src="audio/default_cover.jpg"
               alt={currentSong.title}
               className={`w-64 h-64 md:w-72 md:h-72 rounded-full object-cover shadow-xl ${isPlaying ? "animate-spin-slow" : ""}`}
             />

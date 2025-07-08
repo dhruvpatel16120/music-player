@@ -4,14 +4,13 @@
   "version": "1.0.0",
   "type": "module",
   "main": "main.cjs",
-  "scripts": {
-    "dev": "concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
-    "build": "vite build",
-    "start": "NODE_ENV=prod electron .",
-    "dist": "npm run build && electron-builder",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+ "scripts": {
+  "dev": "cross-env NODE_ENV=development concurrently \"vite\" \"wait-on http://localhost:5173 && electron .\"",
+  "build": "vite build",
+  "start": "cross-env NODE_ENV=production electron .",
+  "dist": "npm run build && electron-builder"
+}
+,
   "dependencies": {
     "@fseehawer/react-circular-slider": "^3.2.7",
     "electron-updater": "^6.6.2",
