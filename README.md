@@ -90,6 +90,12 @@ npm run dev
   
 # 🏗 Production Build & Windows Installer
 
+## 3️⃣ Run APP (React + Electron)
+
+```
+npm start
+```
+
 ## Build frontend
 ```
 npm run build
@@ -99,6 +105,7 @@ npm run build
 ```
 npm run dist
 ```
++ It creates windows installer (.exe)
 ---
 
 # ✅ Usage
