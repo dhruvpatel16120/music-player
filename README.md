@@ -8,7 +8,7 @@
 ![Preview](preview/preview.png)
 
 # 📺 Demo Video
-[![Watch the demo on YouTube](assets/preview.png)](https://www.youtube.com/watch?v=YOUR_VIDEO_ID)
+[![Watch the demo on YouTube](assets/preview.png)][(https://youtu.be/aVgJQXRL1b0?si=8Ao79MUeNOAP4dcL)]
 ---
 # 🛠 **Tech Stack**
 <p>
