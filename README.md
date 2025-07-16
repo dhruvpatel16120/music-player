@@ -105,7 +105,7 @@ npm run dist
 ---
 
 ## ✏ Author
-Developed by Dhruv Patel : 🧑‍💻 Software engineer, digital marketer & content creator
+Developed by Dhruv Patel.
 ---
 
 ## 📄 License
