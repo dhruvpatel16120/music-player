@@ -132,4 +132,5 @@ Developed by Dhruv Patel.
 
 ## 📄 License
 
-This project is for personal & educational purposes. Feel free to fork, learn, and build your own version! 🎵
+This project is licensed under the **GNU General Public License v3.0** – see the [LICENSE](LICENSE) file for details.
+
