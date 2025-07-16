@@ -1,6 +1,8 @@
 # 🎵 My Music Player
 
 ![Preview](preview/preview.png)
+
+![logo](public/logo.png)
 > Modern desktop music player built with **React + Tailwind CSS + Electron**  
 > 🖥 Runs natively on Windows (installer included)  
 > ✨ Features: beautiful dark purple theme, animated album cover, local & online songs, playlist, volume control, splash screen & tray icon
