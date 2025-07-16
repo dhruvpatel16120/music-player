@@ -8,7 +8,16 @@
 ![Preview](preview/preview.png)
 
 # 📺 Demo Video
-[![Watch the demo on YouTube](preview/preview.png)](https://youtu.be/aVgJQXRL1b0?si=iLKWgvBApGDmjbZ7)
+<a href="https://youtu.be/aVgJQXRL1b0?si=iLKWgvBApGDmjbZ7" target="_blank" style="
+  display:inline-block;
+  padding:8px 16px;
+  background:#4CAF50;
+  color:white;
+  border-radius:4px;
+  text-decoration:none;
+  font-weight:bold;">
+  ▶️ Watch Demo
+</a>
 
 ---
 # 🛠 **Tech Stack**
