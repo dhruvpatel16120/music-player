@@ -2,7 +2,7 @@
 ![logo](public/logo.png)
 > Modern desktop music player built with **React + Tailwind CSS + Electron**  
 > 🖥 Runs natively on Windows (installer included)  
-> ✨ Features: beautiful dark purple theme, animated album cover, local & online songs, playlist, volume control, splash screen & tray icon
+> ✨ Features: beautiful dark purple theme, animated album cover, local songs, playlist, volume control, splash screen & tray icon
 ---
 # ✨ Preview of Music Player
 ![Preview](preview/preview.png)
@@ -32,16 +32,14 @@
 
 # ✨ Features
 ✅ Dark purple professional UI  
-✅ Local song upload + online URL add  
+✅ Local song upload   
 ✅ Animated rotating album cover  
 ✅ Play, pause, skip controls  
-✅ Volume & mute buttons with stylish glass card slider  
-✅ Playlist (scrollable, add/remove songs)  
+✅ Volume & mute buttons with stylish glass card slider    
+✅ Playlist  
 ✅ Music progress bar & timing  
 ✅ Splash screen on startup  
-✅ System tray icon with Show/Quit  
 ✅ Built as real Windows installer (.exe)  
-✅ Ready to add auto‑updates
 
 ---
 
@@ -110,7 +108,6 @@ npm run dist
 
 # ✅ Usage
 + Click “+” to add local songs 
-+ Paste URL to add online songs
 + Use player controls & volume/mute buttons
 + Tray icon shows Show/Quit menu
 + Splash screen displays at startup
