@@ -6,12 +6,12 @@ export default function VolumeControl({ volume, onVolumeChange }) {
   const isMuted = volume <= 0.01;
 
   return (
-    <div className="flex items-center space-x-3 w-full max-w-xs">
+    <div className="flex items-center space-x-2 sm:space-x-3 w-full max-w-xs">
       {/* Volume / Mute icon */}
       <button
         aria-label={isMuted ? "Unmute" : "Mute"}
         onClick={() => onVolumeChange({ target: { value: isMuted ? 1.0 : 0 } })}
-        className="text-white hover:text-purple-200 transition text-lg"
+        className="text-white hover:text-purple-200 transition text-base sm:text-lg"
       >
         {isMuted ? <FaVolumeMute /> : <FaVolumeUp />}
       </button>
@@ -29,7 +29,7 @@ export default function VolumeControl({ volume, onVolumeChange }) {
       />
 
       {/* Volume % text */}
-      <span className="text-base text-white">{Math.round(volume * 100)}%</span>
+      <span className="text-sm sm:text-base text-white">{Math.round(volume * 100)}%</span>
     </div>
   );
 }

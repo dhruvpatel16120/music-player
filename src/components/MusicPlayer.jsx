@@ -99,20 +99,20 @@ export default function MusicPlayer() {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#1e1b4b] to-[#2e1065] flex items-center justify-center p-4">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 h-[85vh] max-w-6xl w-full">
+    <div className="min-h-screen bg-gradient-to-br from-[#1e1b4b] to-[#2e1065] flex items-center justify-center p-3 sm:p-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 md:h-[85vh] max-w-6xl w-full">
         
         {/* Center player card */}
-        <div className="relative bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-6 flex flex-col justify-between items-center space-y-4">
+        <div className="relative bg-white/10 backdrop-blur-md rounded-2xl shadow-xl p-4 sm:p-6 flex flex-col justify-between items-center space-y-3 sm:space-y-4 w-full">
           
           {/* Top title */}
-          <div className="flex items-center space-x-3">
-            <FaMusic className="text-purple-400 text-2xl" />
-            <h2 className="text-xl font-semibold">My Music Player</h2>
+          <div className="flex items-center space-x-2 sm:space-x-3">
+            <FaMusic className="text-purple-400 text-xl sm:text-2xl" />
+            <h2 className="text-lg sm:text-xl font-semibold">My Music Player</h2>
           </div>
 
           {/* Status bar */}
-          <div className="flex items-center justify-center space-x-4 text-xs text-purple-300 bg-white/5 rounded-md px-3 py-1">
+          <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-1 text-[11px] sm:text-xs text-purple-300 bg-white/5 rounded-md px-2 sm:px-3 py-1">
             <span>Shuffle: <span className={shuffle ? "text-green-400" : "text-red-400"}>{shuffle ? "On" : "Off"}</span></span>
             <span>Repeat: <span className={repeat ? "text-green-400" : "text-red-400"}>{repeat ? "On" : "Off"}</span></span>
             <span>Mute: <span className={isMuted ? "text-red-400" : "text-green-400"}>{isMuted ? "On" : "Off"}</span></span>
@@ -122,11 +122,11 @@ export default function MusicPlayer() {
           <VolumeControl volume={volume} onVolumeChange={handleVolumeChange} />
 
           {/* Cover + song info */}
-          <div className="flex flex-col items-center space-y-2">
+          <div className="flex flex-col items-center space-y-2 w-full">
             <img
               src="audio/default_cover.jpg"
               alt={currentSong.title}
-              className={`w-64 h-64 md:w-72 md:h-72 rounded-full object-cover shadow-xl ${isPlaying ? "animate-spin-slow" : ""}`}
+              className={`w-40 h-40 sm:w-56 sm:h-56 md:w-72 md:h-72 rounded-full object-cover shadow-xl ${isPlaying ? "animate-spin-slow" : ""}`}
             />
             <SongInfo title={currentSong.title} artist={currentSong.artist} />
           </div>

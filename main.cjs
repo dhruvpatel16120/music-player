@@ -30,14 +30,11 @@ function createWindow() {
     }
   });
 
-  const isDev = process.env.NODE_ENV === "development";
-
-
-  if (isDev) {
-    mainWindow.loadURL('http://localhost:5173');
+  // Always load built files to avoid MIME issues from raw JSX
+  const distIndexPath = path.join(__dirname, 'dist/index.html');
+  mainWindow.loadFile(distIndexPath);
+  if (process.env.NODE_ENV !== 'production') {
     mainWindow.webContents.openDevTools({ mode: 'detach' });
-  } else {
-    mainWindow.loadFile(path.join(__dirname, 'dist/index.html'));
   }
 
   // When ready, close splash & show
@@ -47,7 +44,8 @@ function createWindow() {
   });
 
   // Tray icon & menu
-  tray = new Tray(path.join(__dirname, 'build/icon.ico'));
+  // Use existing icon in public folder (matches repo layout)
+  tray = new Tray(path.join(__dirname, 'public/icon.ico'));
   const contextMenu = Menu.buildFromTemplate([
     { label: 'Show', click: () => mainWindow.show() },
     { label: 'Quit', click: () => app.quit() }

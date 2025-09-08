@@ -37,6 +37,7 @@
 ✅ Play, pause, skip controls  
 ✅ Volume & mute buttons with stylish glass card slider    
 ✅ Playlist  
+✅ Responsive layout for small screens  
 ✅ Music progress bar & timing  
 ✅ Splash screen on startup  
 ✅ Built as real Windows installer (.exe)  
@@ -79,20 +80,29 @@ cd music-player
 npm install
 ```
 
-## 3️⃣ Run in development (React + Electron)
+## 3️⃣ Run in development
 
+- Electron only (recommended):
+```
+npm run dev:electron
+```
+
+- Frontend only (Vite dev server):
 ```
 npm run dev
 ```
-+ Opens Vite dev server & Electron window
+Note: The Electron app now loads the built files directly; no Vite server is required to run Electron.
   
 # 🏗 Production Build & Windows Installer
 
-## 3️⃣ Run APP (React + Electron)
+## 3️⃣ Run APP (Electron only)
 
 ```
 npm start
 ```
+This builds the frontend and launches Electron pointing to `dist/index.html`.
+# ✅ Usage
+#
 
 ## Build frontend
 ```
@@ -131,3 +141,4 @@ Developed by Dhruv Patel.
 
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
 
+---
