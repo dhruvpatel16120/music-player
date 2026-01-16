@@ -102,14 +102,12 @@ npm start
 ```
 This builds the frontend and launches Electron pointing to `dist/index.html`.
 # ✅ Usage
-#
-
-## Build frontend
+### Build frontend
 ```
 npm run build
 ```
 
-## Build installer
+### Build installer
 ```
 npm run dist
 ```
@@ -132,11 +130,6 @@ npm run dist
 + Electron Builder → Windows installer
 
 ---
-
-## ✏ Author
-Developed by Dhruv Patel.
----
-
 ## 📄 License
 
 This project is licensed under the **MIT License** – see the [LICENSE](LICENSE) file for details.
